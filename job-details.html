@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bs4-rtl/css/bootstrap.min.css">
+    <link rel="stylesheet" href="final-jQuery.css">
+    <title>برنامه نویسی، طراحی</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav pr-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">نخست</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html">فرصت های شغلی</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servise.html">خدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">بلاگ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="baner">
+        <div class="baner-text">
+            <h1 style="font-size:50px"> برنامه نویسی، طراحی </h1>
+        </div>
+    </div>
+
+    <div class="container margin-T margin-B">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+                <div id="part1"></div>
+            </div>
+            <div class="col-md-7">
+                <div id="pic"></div>
+                <div id="part2"></div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Final Project</div>
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./bs4-rtl/js/bootstrap.min.js"></script>
+    <script src="./js/handlebars.js"></script>
+    <script type="text/yechizi" id="user-template">
+            <div class="py-2 px-3"  style="border: 1px solid lightblue; font-size: 15px; line-height: 1.8;">
+                <h5 style = "color:blue"> درباره شغل </h5>
+                <span>دسته کاری: </span><span style= "color:gray">{{category}}</span><br>
+                <span>تجربه کاری: </span><span style= "color:gray">{{experience}}</span><br>
+                <span> محل شغل: </span><span style= "color:gray">{{loc}}</span><br>
+                <span>نوع کار: </span><span style= "color:gray">{{type}}</span><br>
+                <span>حقوق سالیانه: </span><span style= "color:gray">{{salary}}</span><br>
+                <span>جنسیت: </span><span style= "color:gray">{{gender}}</span><br>
+                <span> مهارت ها : </span><span style= "color:gray; font-size: 11px">{{skills}}</span><br>
+            </div>
+    </script>
+    <script type="text/yechizi-2" id="user-template-2">
+        <img src="{{img}}" style="width: 100%; text-align: center"><br>
+        <p style= "text-align: justify;">{{company-desc}}</p>
+    </script>
+    <script src="./js/job-details.js"></script>
+</body>
+
+</html>

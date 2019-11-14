@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bs4-rtl/css/bootstrap.min.css">
+    <link rel="stylesheet" href="final-jQuery.css">
+    <title>نخست</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav pr-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">نخست</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html">فرصت های شغلی</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servise.html">خدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">بلاگ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">تماس با ما</a>
+                </li>
+        </div>
+        </ul>
+    </nav>
+    <div class="baner"></div>
+
+    <div class="jobsBoard">
+        <div class="container">
+            <div class="row" id="board">
+            </div>
+        </div>
+    </div>
+
+    <div class="container margin-T" style="margin-bottom: 50px;">
+        <div id="header" style="text-align:center"></div>
+    </div>
+    <div class="container">
+        <table class="table">
+            <tr id="row-0"></tr>
+            <tr id="row-1"></tr>
+            <tr id="row-2"></tr>
+            <tr id="row-3"></tr>
+            <tr id="row-4"></tr>
+        </table>
+    </div>
+    <div class="container">
+        <p><span>برای دیدن ادامه لیست</span><a href="table.html" text-align="center"> اینجا </a><span> کلیک کنید.</span></p>
+        <p><span>برای دیدن جزییات شغل برنامه نویسی</span><a href="job-details.html" text-align="center"> اینجا </a><span> کلیک کنید.</span> </p>
+    </div>
+    <div class="footer" style="margin-top: 5%;">Final Project</div>
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./bs4-rtl/js/bootstrap.min.js"></script>
+    <script src="./js/handlebars.js"></script>
+    <script type="text/yechizi" id="user-template-1">
+        <div class="col-md-3 right white pt-5"><h2 class="right">{{candidates}}</h2><span style="font-size:15px">متقاضیان</span></div>
+        <div class="col-md-3 right white pt-5"><h2 class="right">{{companies}}</h2><span style="font-size:15px">شرکت ها</span></div>
+        <div class="col-md-3 right white pt-5"><h2 class="right">{{jobs-posted}}</h2><span style="font-size:15px">فرصت های شغلی</span></div>
+        <div class="col-md-3 right white pt-5"><h2 class="right">{{jobs-filled}}</h2><span style="font-size:15px">آمار استخدام</span></div>
+    </script>
+    <script type="text/yechizi" id="user-template-2">
+        <span style="font-size:40px; font-weight: bold"> {{jobs-count}} </span> <span style="font-size:25px; font-weight: bold"> لیست مشاغل </span>
+    </script>
+    <script type="text/yechizi" id="user-template-3">
+            <td><img src="{{img}}" style="width: 70%;"></td>
+            <td style="font-size:14px; vertical-align: middle;">{{company}}</td>
+            <td style="font-size:13px; vertical-align: middle;">{{loc}}</td>
+            <td style="font-size:13px; vertical-align: middle;">{{salary}}</td>
+            <td style="font-size:13px; vertical-align: middle;">{{title}}</td>
+            <td style="font-size:12px; vertical-align: middle;">{{type}}</td>
+            <td style="font-size:11px; vertical-align: middle">{{#if urgent}} فوری {{else}} --- {{/if}}</td>
+            <td style="color:blue; font-size:10px; vertical-align: middle;">{{posted}}</td>
+    </script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

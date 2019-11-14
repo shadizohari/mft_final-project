@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bs4-rtl/css/bootstrap.min.css">
+    <link rel="stylesheet" href="final-jQuery.css">
+    <title>بلاگ</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav pr-0">
+                    <a class="nav-link" href="home.html">نخست</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html">فرصت های شغلی</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servise.html">خدمات</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">بلاگ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="baner">
+        <div class="baner-text">
+            <h1 style="font-size:50px"> بلاگ </h1>
+        </div>
+    </div>
+    <div id="blogs-container" class="container margin-T">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="part" id="part-0"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-1"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-2"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-3"></div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="part" id="part-4"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-5"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-6"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-7"></div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="part" id="part-8"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-9"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-10"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-11"></div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="part" id="part-12"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-13"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-14"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-15"></div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="part" id="part-16"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-17"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-18"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="part" id="part-19"></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:center; direction: ltr;" class="margin-T margin-B">
+            <a class="prev" onclick="backPage()">previous</a>
+        <span class="dot active-1">1</span>
+        <span class="dot">2</span>
+        <span class="dot">3</span>
+        <span class="dot">4</span>
+        <a class="next" onclick="plusPage()">next</a>
+        
+    </div>
+
+    <div class="footer">Final Project</div>
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./bs4-rtl/js/bootstrap.min.js"></script>
+    <script src="./js/handlebars.js"></script>
+    <script type="text/yechizi" id="user-template">
+        <div class="py-2 px-3 mt-2">
+                <img src="{{img}}" style="width: 100%;"><br><br>
+                <p>{{title}}</p>
+                <a href="#" style="color: blue">{{comments}}</a>
+                <span class="vl mx-3"></span>
+                <span style="color: gray">{{posted}}</span>
+              </div>
+    </script>
+    <script src="./js/blog.js"></script>
+
+</body>
+
+</html>
